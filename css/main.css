@@ -1,0 +1,101 @@
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+	background: #1B1A1D;
+	font-size: 24px;
+	
+	background-image: url('../img/black_rectangle.png'),url('../img/background 1.png');
+	background-repeat: no-repeat;
+	background-position-x: center;
+    background-position-y: top;
+	 height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+    color: #fff;
+}
+h1{
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 13px;
+    margin-left: 26px;
+    letter-spacing: 0.12em;
+}
+header a{
+	display: flex;
+}
+.logo{
+	text-transform: uppercase;
+	padding-top: 37px;
+	height: 36px;
+
+}
+.button{
+	background-color: #B5063A;
+	border-radius: 25px;
+	text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+    margin-top: 47px;
+    height: 30px;
+    border: none;
+    font-family: 'Nunito', sans-serif; 
+    padding: 5px 20px;
+    margin-left: 50px;   
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {	 
+	margin: 0 auto; 
+} 
+nav { 
+	background-color: #702233; 
+	margin: 0 5px 40px 90px; 
+} 
+ article
+ { 
+ 	background-color: #702233; 
+ 	margin: 0 100px 40px 35px; 
+ } 
+ header{ 
+ 	padding: 0 100px 0 100px; 
+ } 
+ footer{ 
+ 	padding-left: 100px;
+ 	padding-top: 20px; 
+ 	} 
+h2{
+	font-size: 13px;
+}
+.films{
+	display: flex;
+    flex-wrap: wrap;
+}
+.poster{
+	width: 200px;
+}
+
+ p{ 
+ 	font-size: 14px; margin: 8px 0; 
+ }
+.mailo{
+	font-size: 14px;
+}
+.contacts{
+	display: flex;
+
+}
+.cont{
+	margin: 15px 15px 0 0;
+	height: 40px;
+
+}
