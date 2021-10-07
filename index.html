@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Основная страница</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "nav article"
+    "footer footer ";
+  grid-template-rows: 126px 1fr 200px;
+  grid-template-columns: 334px 1fr;
+  height: 100vh;
+  margin: 0;
+  }
+
+footer{
+  background: #4E4E50;
+}
+#header {
+  grid-area: header;
+}
+#footer {
+  grid-area: footer;
+}
+#article { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+</style>
+</head>
+<body>
+  <header id="header" class="header">
+  		<a href="#" class="logo">
+  			<img src="img/logo.svg">
+  			<h1>
+  				moviereview
+  			</h1>
+  		</a>
+  		<div>
+  			<input type="button" class="button" value="регистрация">
+  		<input type="button" class="button" value="вход">
+  		</div>
+
+  </header>
+  <article id="article">
+  	<div class="container">
+  		<div class="films">
+  			<a href="#" class="posterid">
+  			<img src="img/2.jpg" class="poster">
+  			<h2>Райя и последний дракон</h2>
+	  		</a>
+	  		<a href="#" class="posterid">
+	  			<img src="img/3.jpg" class="poster">
+	  			<h2>Джокер</h2>
+	  		</a>
+	  		<a href="#" class="posterid">
+	  			<img src="img/1.jpg" class="poster">
+	  			<h2>Форма голоса</h2>
+	  		</a>
+	  		<a href="#" class="posterid">
+	  			<img src="img/4.jpg" class="poster">
+	  			<h2>Менталист</h2>
+	  		</a>
+	  		<a href="#" class ="posterid">
+	  			<img src="img/5.jpg" class="poster">
+	  			<h2>Шерлок</h2>
+	  		</a>	
+  		</div>
+  	</div>
+  </article>
+  <nav id="mainNav">
+  	<div class="container">
+  		<div class="menu">
+  			<h3>Главная</h3>
+  			<img src="img/dovn.svg">
+  		</div>
+  		<div class="menu">
+  			<h3>Фильмы</h3>
+  			<img src="img/dovn.svg">
+  		</div>
+  		<div class="menu">
+  			<h3>Мультфильмы</h3>
+  			<img src="img/dovn.svg">
+  		</div>
+  		<div class="menu">
+  			<h3>Сериалы</h3>
+  			<img src="img/dovn.svg">
+  		</div>
+  		
+  		
+  		
+
+  	</div>
+  </nav>
+  <footer id="footer">
+  	<div class="container">
+  		<p>Администратор сайта:</p>
+  		<p>Пустовалова Ирина Павловна</p>
+  		<a href="mailto:pustov4lova.irina@yandex.ru" class="mailo">
+			pustov4lova.irina@yandex.ru
+		<a>
+		<div class="contacts">
+			<a href="https://vk.com/id269910408">
+				<img src="img/vk.svg" class="cont">
+			</a>
+			<a href="https://www.instagram.com/irishka_0723">
+				<img src="img/instagram.svg" class="cont">
+			</a>
+			<a href="https://t.me/Rina_Code">
+				<img src="img/telegram.svg" class="cont">
+			</a>
+			<a href="mailto:pustov4lova.irina@yandex.ru">
+				<img src="img/email.svg" class="cont">
+			</a>
+		</div>
+  	</div>
+  </footer>
+</body>
