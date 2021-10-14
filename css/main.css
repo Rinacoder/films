@@ -298,3 +298,53 @@ h2{
 	    width: 140px;
 	}
 }
+@media screen and (max-width: 570px)
+{
+	.imenu{
+		width: 24px;
+	}
+	h1{
+	    font-size: 15px;
+    	margin: 9px 0 0 10px;
+	}
+	.poster {
+	    width: 130px;
+	}
+}
+@media screen and (max-width: 540px)
+{
+	.poster {
+	    width: 120px;
+	}
+}
+@media screen and (max-width: 510px)
+{
+	.button{
+		margin-left: 20px;
+	}
+	.poster {
+	    width: 110px;
+	}
+}
+@media screen and (max-width: 490px)
+{
+	.button{
+		margin-left: 10px;
+		padding: 5px 10px;
+	}
+	.poster {
+	    width: 100px;
+	}
+	h2{
+		width: 120px;
+	}
+}
+@media screen and (max-width: 450px)
+{
+	.poster {
+	    width: 160px;
+	}
+	h2{
+		width: 180px;
+	}
+}
