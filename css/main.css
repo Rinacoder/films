@@ -69,11 +69,14 @@ nav {
  } 
  header{ 
  	padding: 0 100px 0 100px; 
+ }
+ .imenu{
+ 	display: none;
  } 
  footer{ 
  	padding-left: 100px;
  	padding-top: 20px; 
- 	} 
+ } 
 h2{
 	font-size: 16px;
     width: 180px;
@@ -117,7 +120,9 @@ h3{
 }
 
  p{ 
- 	font-size: 14px; margin: 8px 0; 
+ 	font-size: 14px; 
+ 	margin: 8px 0; 
+ 	padding-top: 7px;
  }
 .mailo{
 	font-size: 14px;
@@ -131,6 +136,165 @@ h3{
 	height: 40px;
 
 }
-@media screen and (min-width: 1520px){
+body {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "nav article"
+    "footer footer ";
+  grid-template-rows: 126px 1fr 200px;
+  grid-template-columns: 334px 1fr;
+  height: 100vh;
+  margin: 0;
+}
+@media screen and (min-width: 1700px){
+body{
+	grid-template-rows: 254px 1fr 242px;
+	grid-template-columns: 520px 1fr;
+}
+h1{
+	font-size: 36px;
+}
+.logo{
+	height: 49px;
+	padding-top: 108px;
+}
+.button{
+	margin-top: 103px;
+    height: 60px;
+    font-size: 36px;
+    padding: 5px 38.5px;
+    margin-left: 60px;
+}
+h3{
+    font-size: 30px;
+    padding: 15px;
+    margin: 25px 30px;
+}
+.poster{
+	width: 200px;
+	padding-left: 30px;
+}
+h2{
+    font-size: 22px;
+    width: 220px;
+    padding-left: 30px;
+}
+ p{ 
+ 	font-size: 24px; 
+ 	margin: 10px 0; 
+ 	padding: 0;
+ }
+.mailo{
+	font-size: 24px;
+}
+.cont{
+	margin: 15px 20px 0 0;
+	height: 45px;
+}
 
+}
+@media screen and (max-width: 888px){
+body {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "article"
+    "footer ";
+  grid-template-rows: 126px 1fr 200px;
+  grid-template-columns: 1fr;
+}	
+article{
+	margin: 0;
+}
+nav{
+	display: none;
+}
+.imenu{
+	display: block;
+    width: 36px;	
+}
+.ilogo{
+	display: none;
+}
+.films{
+    padding: 0 70px;
+}
+.poster{
+    width: 130px;
+    padding: 20px;
+}
+h2{
+	width: 140px;
+}
+}
+@media screen and (max-width: 848px)
+{
+.poster {
+    width: 120px;
+}
+h2{
+	width: 130px;
+}
+}
+@media screen and (max-width: 808px)
+{
+.poster {
+    width: 110px;
+}
+}
+@media screen and (max-width: 772px)
+{
+.button{
+    margin-left: 20px;
+}
+.poster {
+    width: 150px;
+}
+}
+@media screen and (max-width: 739px)
+{
+.poster {
+    width: 140px;
+}
+}
+@media screen and (max-width: 710px)
+{
+.button{
+    font-size: 12px;
+}
+.poster {
+    width: 130px;
+}
+}
+@media screen and (max-width: 710px)
+{
+	header{
+		padding: 0 30px;
+	}
+	h1{
+		margin: 10px 0 0 20px;
+	}
+	.button{
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+	.poster {
+	    width: 110px;
+	}
+	.films {
+	    padding: 0;
+	}
+}
+@media screen and (max-width: 640px)
+{
+	.poster {
+	    width: 150px;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	.poster {
+	    width: 140px;
+	}
 }
