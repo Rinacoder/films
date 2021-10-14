@@ -348,3 +348,72 @@ h2{
 		width: 180px;
 	}
 }
+@media screen and (max-width: 430px)
+{
+	body{
+	grid-template-rows: 100px 1fr 242px;
+}
+	.button{
+	    margin: 35px 5px;
+    padding: 5px 10px;
+	}
+
+	.poster {
+	    width: 150px;
+	}
+	h2{
+		width: 170px;
+	}
+	header{
+		padding: 0 15px;
+	}
+	.logo{
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 410px)
+{
+	body{
+	grid-template-rows: 70px 1fr 242px;
+	}
+	.button{
+	margin: 19px 0 0 0;
+    padding: 0 2px;
+    background-color: #1b1a1d;
+    color: #e91e63;	
+    border-radius: 0px;
+	}
+
+	.poster {
+	    width: 130px;
+	}
+	h2{
+		width: 150px;
+	}
+	header{
+		padding: 0 15px;
+	}
+	.logo{
+		padding: 15px 0 0 0;
+	}
+}
+@media screen and (max-width: 340px)
+{
+	.button{
+	font-size: 10px;
+	}
+
+	.poster {
+	    width: 110px;
+	}
+	h2{
+		width: 130px;
+	}
+	.imenu{
+		width: 20px;
+	}
+	h1{
+		font-size: 12px;
+	}
+}
