@@ -32,7 +32,6 @@ header a{
 }
 .logo{
 	text-transform: uppercase;
-	padding-top: 37px;
 	height: 36px;
 
 }
@@ -42,7 +41,6 @@ header a{
 	text-transform: uppercase;
     letter-spacing: 0.12em;
     font-weight: bold;
-    margin-top: 47px;
     height: 30px;
     border: none;
     font-family: 'Nunito', sans-serif; 
@@ -50,26 +48,25 @@ header a{
     margin-left: 50px; 
     cursor: pointer;  
 }
-.header{
+header{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding: 0 100px 0 100px; 
 }
 
 .container {	 
 	margin: 0 auto; 
 } 
 nav { 
-	 background-color: #561927;
-	margin: 0 5px 40px 90px; 
+	background-color: #561927;
+	margin: 0 0 40px 90px; 
 } 
  article
  { 
  	background-color: #561927;
- 	margin: 0 100px 40px 35px; 
+ 	margin: 0 100px 40px 0; 
  } 
- header{ 
- 	padding: 0 100px 0 100px; 
- }
  .imenu{
  	display: none;
  } 
@@ -136,7 +133,7 @@ h3{
 	height: 40px;
 
 }
-body {
+.oll {
   display: grid;
   grid-template-areas: 
     "header header"
@@ -146,9 +143,10 @@ body {
   grid-template-columns: 334px 1fr;
   height: 100vh;
   margin: 0;
+  column-gap: 40px;
 }
 @media screen and (min-width: 1700px){
-body{
+.oll{
 	grid-template-rows: 254px 1fr 242px;
 	grid-template-columns: 520px 1fr;
 }
@@ -195,7 +193,7 @@ h2{
 
 }
 @media screen and (max-width: 888px){
-body {
+.oll {
   display: grid;
   grid-template-areas: 
     "header"
@@ -260,30 +258,25 @@ h2{
 }
 @media screen and (max-width: 710px)
 {
-.button{
-    font-size: 12px;
-}
-.poster {
-    width: 130px;
-}
-}
-@media screen and (max-width: 710px)
-{
 	header{
 		padding: 0 30px;
 	}
+
 	h1{
 		margin: 10px 0 0 20px;
 	}
 	.button{
-		margin-top: 40px;
 		margin-left: 30px;
+		font-size: 12px;
 	}
 	.poster {
 	    width: 110px;
 	}
 	.films {
 	    padding: 0;
+	}
+	footer{
+		padding: 0 30px;
 	}
 }
 @media screen and (max-width: 640px)
@@ -350,12 +343,12 @@ h2{
 }
 @media screen and (max-width: 430px)
 {
-	body{
+	.oll{
 	grid-template-rows: 100px 1fr 242px;
 }
 	.button{
 	    margin: 35px 5px;
-    padding: 5px 10px;
+    	padding: 5px 10px;
 	}
 
 	.poster {
@@ -367,18 +360,14 @@ h2{
 	header{
 		padding: 0 15px;
 	}
-	.logo{
-		padding-top: 30px;
-	}
 }
 
 @media screen and (max-width: 410px)
 {
-	body{
+	.oll{
 	grid-template-rows: 70px 1fr 242px;
 	}
 	.button{
-	margin: 19px 0 0 0;
     padding: 0 2px;
     background-color: #1b1a1d;
     color: #e91e63;	
@@ -391,14 +380,8 @@ h2{
 	h2{
 		width: 150px;
 	}
-	header{
-		padding: 0 15px;
-	}
-	.logo{
-		padding: 15px 0 0 0;
-	}
 }
-@media screen and (max-width: 340px)
+@media screen and (max-width: 370px)
 {
 	.button{
 	font-size: 10px;
