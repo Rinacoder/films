@@ -395,6 +395,24 @@ h2{
 }
 @media screen and (max-width: 600px)
 {
+.popup__content{
+	
+	max-width: 380px;
+	
+}
+.entranceBatton, .registrationBatton {
+    width: 320px;
+    font-size: 18px;
+    
+}
+
+
+.email, .password, .name, .password_cop, .tel{
+	width: 290px;
+	font-size: 18px;
+    
+}
+
 	.poster {
 	    width: 140px;
 	}
@@ -442,6 +460,30 @@ h2{
 }
 @media screen and (max-width: 450px)
 {
+	.popup__content {
+    max-width: 300px;
+    margin-top: -40px;
+}
+.popup__title {
+    font-size: 24px;
+    padding: 30px 0;
+}
+.popup__basic {
+    margin: 15px;
+}
+.entranceBatton, .registrationBatton {
+    margin: 5px;
+    
+}
+.popup__registration, .popup__entrance {
+    
+    font-size: 18px;
+}
+.email, .password, .name, .password_cop, .tel {
+    font-size: 14px;
+
+    margin: 10px 5px;
+}
 	.poster {
 	    width: 160px;
 	}
