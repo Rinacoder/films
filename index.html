@@ -11,9 +11,7 @@
 	<style>
 
 
-footer{
-  background: #4E4E50;
-}
+
 #header {
   grid-area: header;
 }
@@ -30,6 +28,41 @@ footer{
 </head>
 <body>
 	<div class="oll">
+
+<form class="popup_e" id="popup_e">
+		<div class="popup__body">
+			<div class="popup__content">
+					<a  class="popup__close" id="popup__close_e">X</a>
+					<a  class="popup__registration" id="popup__registration">Регистрация</a>
+					<div class="popup__title">Вход</div>
+					<div class="popup__basic">
+						<input class="email" type="Email" placeholder="Email" required>
+						<input type="password" id="password" class="password" placeholder="Пароль" required  minlength="6">
+						<input type="submit" class="entranceBatton" value="ВХОД">
+					</div>
+				</div>	
+		</div>
+</form>
+
+<form class="popup_r" id="popup_r">
+		<div class="popup__body" >
+			<div class="popup__content">
+					<a class="popup__close" id="popup__close_r">X</a>
+					<a  class="popup__entrance" id="popup__entrance">Вход</a>
+					<div class="popup__title">Регистрация</div>
+					<div class="popup__basic">
+						<input type="text" id="name" class="name"  placeholder="Ваше имя" required>
+						<input type="Email" class="email" id="email" placeholder="Email" required>
+						<input type="tel" class="tel" id="tel" placeholder="Номер телефона" required>
+						<input type="password" class="password" id="password" placeholder="Пароль" required  minlength="6">
+						<input type="password" class="password_cop" id="password_cop" placeholder="Подтвердите пароль" required>
+							<p><input type="checkbox" required  class="checkbox" value=""> Согласие на обработку персональных данных</p>
+						<input type="submit" class="registrationBatton" value="РEГИСТРАЦИЯ">
+					</div>
+				</div>	
+		</div>
+</form>
+
   <header id="header" class="header">
   		<a href="#" class="logo">
   			<img src="img/logo.svg" class="ilogo">
@@ -39,8 +72,8 @@ footer{
   			</h1>
   		</a>
   		<div>
-  			<input type="button" class="button" value="регистрация">
-  		<input type="button" class="button" value="вход">
+  			<input type="button" id="popup_r_b" class="button" value="регистрация">
+  		<input type="button" id="popup_e_b" class="button" value="вход">
   		</div>
 
   </header>
@@ -117,5 +150,9 @@ footer{
 		</div>
   	</div>
   </footer>
+
+
+<script src="js/main.js"></script>
   </div>
+  
 </body>
