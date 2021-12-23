@@ -9,16 +9,19 @@ var close_r = document.getElementById('popup__close_r');
 var bodyNode = document.body || document.getElementsByTagName('body')[0];
 
 var check = document.getElementById('checkbox');
-var reg_b = document.getElementById('registrationBatton');
+var reg_b = document.querySelector('#registrationBatton');
 
 
 
 if(check.checked)
 {
 console.log(1);
+reg_b.disabled = false;
 }
 else{
   console.log(2);
+  
+  reg_b.disabled = true;
 }
 
 btn_e.onclick = function(){
