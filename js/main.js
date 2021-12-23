@@ -6,13 +6,29 @@ var btn_einr = document.getElementById('popup__entrance');
 var btn_rine = document.getElementById('popup__registration');
 var close_e = document.getElementById('popup__close_e');
 var close_r = document.getElementById('popup__close_r');
+var bodyNode = document.body || document.getElementsByTagName('body')[0];
+
+var check = document.getElementById('checkbox');
+var reg_b = document.getElementById('registrationBatton');
+
+
+
+if(check.checked)
+{
+console.log(1);
+}
+else{
+  console.log(2);
+}
 
 btn_e.onclick = function(){
   popup_e.style.display = "block";
+  bodyNode.style.overflow = "hidden";
 }
 
 btn_r.onclick = function(){
   popup_r.style.display = "block";
+  bodyNode.style.overflow = "hidden";
 }
 
 btn_einr.onclick = function(){
@@ -27,10 +43,12 @@ btn_rine.onclick = function(){
 
 close_r.onclick = function(){
   popup_r.style.display = "none";
+  bodyNode.style.overflow = "auto";
 }
 
 close_e.onclick = function(){
   popup_e.style.display = "none";
+  bodyNode.style.overflow = "auto";
 }
 
 
