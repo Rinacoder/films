@@ -3,157 +3,182 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Основная страница</title>
+	<title>Document</title>
+
+	<link href="styles.css" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<!-- Шрифты -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<style>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Forum&family=Kablammo&family=Pacifico&family=Roboto:wght@300;400&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 
-
-
-#header {
-  grid-area: header;
-}
-#footer {
-  grid-area: footer;
-}
-#article { 
-  grid-area: article;      
-  }
-#mainNav { 
-  grid-area: nav; 
-  }
-</style>
+<script>
+  (function(_,r,e,t,a,i,l){_['retailCRMObject']=a;_[a]=_[a]||function(){(_[a].q=_[a].q||[]).push(argu  ments)};_[a].l=1*new   Date();l=r.getElementsByTagName(e)[0];i=r.createElement(e);i.async=!0;i.src=t;l.parentNode  .insertBefore(i,l)})(window,document,'script','https://collector.retailcrm.ru/w.js','_rc');
+  _rc('create', 'RC-68376489030-3');
+  _rc('send', 'pageView');
+</script>
 </head>
-<body>
-	<div class="oll">
+<body style="background-color: #6E6E6E;">
+	<div class="container">
+		<div>
+			<nav class="navbar navbar-expand-lg bg-body-tertiary bg-white rounded-4 my-5 px-3" >
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<p class="fw-bold m-0" style="color: #BAFF39">in<span class="text-dark">WEB</span></p>		</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
 
-<form class="popup_e" id="popup_e">
-		<div class="popup__body">
-			<div class="popup__content">
-					<a  class="popup__close" id="popup__close_e">X</a>
-					<a  class="popup__registration" id="popup__registration">Регистрация</a>
-					<div class="popup__title">Вход</div>
-					<div class="popup__basic">
-						<input class="email" type="Email" placeholder="Email" required>
-						<input type="password" id="password" class="password" placeholder="Пароль" required  minlength="6">
-						<input type="submit" class="entranceBatton" value="ВХОД">
+								<li class="nav-item">
+									<a class="nav-link btnExecute px-4 fw-bold" href="#WEB">WEB для меня</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link btnExecute fw-bold" href="#form">Связаться со мной</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>	
-		</div>
-</form>
+				</nav>
+			</div>
 
-<form class="popup_r" id="popup_r">
-	<div class="popup__body" >
-		<div class="popup__content">
-				<a class="popup__close" id="popup__close_r">X</a>
-				<a  class="popup__entrance" id="popup__entrance">Вход</a>
-				<div class="popup__title">Регистрация</div>
-				<div class="popup__basic">
-					<input type="text" id="name" class="name"  placeholder="Ваше имя" required pattern="[а-я, А-Я, ,-]+">
-					<input type="Email" class="email" id="email" placeholder="Email" required>
-					<input type="tel" class="tel" id="tel" placeholder="Номер телефона" required pattern="[0-9]{11}" title="Введите номер телефона. 11 цифр без тире и пробелов">
-					<input type="password" class="password" id="password" placeholder="Пароль" required  minlength="6" >
-					<input type="password" class="password_cop" id="password_cop" placeholder="Подтвердите пароль" required>
-						<p><input type="checkbox" class="checkbox" id="checkbox" value=""> Согласие на обработку персональных данных</p>
+			<div class="d-flex justify-content-between pb-5">
 
-					<input type="submit" class="registrationBatton" id="registrationBatton" value="РEГИСТРАЦИЯ" disabled>
+				<div >
+					<p class="fs-4 text-white pt-5 mb-3">
+						Меня зовут
+					</p>
+					<p class="fs-1 text-white fw-bold">
+						Пустовалова Ирина
+					</p>
+					<p class="fs-4 text-white pb-5">
+						я занимаюсь  <span style="color: #BAFF39">WEB-разработкой</span>
+					</p>
+
+					<!-- <a href="#form"> -->
+						<input type="button" id="back-call-button" class="btn btn-write fs-5 mt-5" value="Написать" style="--bs-btn-color: #BAFF39;--bs-btn-border-color: #BAFF39;--bs-btn-hover-border-color: #BAFF39;">
+						
+					<!-- </a> -->
+					<script>
+   $('#back-call-button').on('click',function(e) {
+       e.preventDefault();
+       alert('your message here');
+      
+   });
+</script>
+
+<button type="submit" id="submit">Нажми меня</button>
+<script type="text/javascript">
+	document.querySelector("#submit").onclick = function(e){
+
+       _rc('require', 'capture-form', { 'orderMethod': 'callback'}); //Загрузка модуля формы
+       //Показываем форму
+       _rc('capture-form:show', {
+           'fields': ['phone'],
+       });
+  alert(e.preventDefault());
+}
+</script>
+
+
 				</div>
-			</div>	
-	</div>
-</form>
+				<img class="bg-img pb-5" src="background.jpg">
 
-  <header id="header" class="header">
-  		<a href="https://rinacoder.github.io/films/index.html" class="logo">
-  			<img src="img/logo.svg" class="ilogo">
-  			<img src="img/menu3.svg" class="imenu">
-  			<h1>
-  				moviereview
-  			</h1>
-  		</a>
-  		<div>
-  			<input type="button" id="popup_r_b" class="button" value="регистрация">
-  		<input type="button" id="popup_e_b" class="button" value="вход">
-  		</div>
+			</div>
+			<div class="pt-3">
+				<h1 class="text-white pt-5 text-center" id="WEB">
+					Web  для меня - это...
+				</h1>
+			</div>
 
-  </header>
-  <article id="article">
-  	<div class="container">
-  		<div class="films">
-  			<a href="#" class="posterid">
-  			<img src="img/2.jpg" class="poster">
-  			<h2>Райя и последний дракон</h2>
-	  		</a>
-	  		<a href="#" class="posterid">
-	  			<img src="img/3.jpg" class="poster">
-	  			<h2>Джокер</h2>
-	  		</a>
-	  		<a href="#" class="posterid">
-	  			<img src="img/1.jpg" class="poster">
-	  			<h2>Форма голоса</h2>
-	  		</a>
-	  		<a href="#" class="posterid">
-	  			<img src="img/4.jpg" class="poster">
-	  			<h2>Менталист</h2>
-	  		</a>
-	  		<a href="#" class ="posterid">
-	  			<img src="img/5.jpg" class="poster">
-	  			<h2>Шерлок</h2>
-	  		</a>	
-  		</div>
-  	</div>
-  </article>
-  <nav id="mainNav">
-  	<div class="container">
-  		<div class="menu">
-  			<h3>Главная</h3>
-  			<img src="img/dovn.svg">
-  		</div>
-  		<div class="menu">
-  			<h3>Фильмы</h3>
-  			<img src="img/dovn.svg">
-  		</div>
-  		<div class="menu">
-  			<h3>Мультфильмы</h3>
-  			<img src="img/dovn.svg">
-  		</div>
-  		<div class="menu">
-  			<h3>Сериалы</h3>
-  			<img src="img/dovn.svg">
-  		</div>
-  		
-  		
-  		
+			<div class="row pt-5">
+				<div class="col-sm-4 pb-5 mb-3 mb-sm-0">
+					<div class="card h-100  mb-3" style="max-width: 21rem; background: #BAFF39">
+						<div class="card-body">
+							<h5 class="card-title">Творчество</h5>
+							<p class="card-text">Одно и тоже можно сделать по-разному. Формы, цвета, шрифты - соединяя их, получается красота.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3 pb-5 mb-sm-0">
+					<div class="card h-100 mb-3" style="max-width: 21rem; background: #BAFF39">
+						<div class="card-body">
+							<h5 class="card-title">Взаимодействие</h5>
+							<p class="card-text">Понимаю, что одним важно в точности отрисовать дизайн, а другие просят совета. Общаясь, мы договоримся, как действовать. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3 pb-5 mb-sm-0">
+					<div class="card h-100 mb-3" style="max-width: 21rem; background: #BAFF39">
+						<div class="card-body">
+							<h5 class="card-title">Проектная работа</h5>
+							<p class="card-text">За одной страницей спрятано множество элементов, которые образуют сложную структуру.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3 pb-5 mb-sm-0">
+					<div class="card h-100 mb-3" style="max-width: 21rem; background: #BAFF39">
+						<div class="card-body">
+							<h5 class="card-title">Чудо</h5>
+							<p class="card-text">Это когда использую код (html, css, php, js) и этот код творит чудеса: появляются картинки, отправляются данные, сохраняется или отображается информация.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3 pb-5 mb-sm-0">
+					<div class="card h-100 mb-3" style="max-width: 21rem; background: #BAFF39">
+						<div class="card-body">
+							<h5 class="card-title">Командная работа</h5>
+							<p class="card-text">Мы... В этом слове так много. Мы создаем продукт - с вами мечтаю работать в команде, в которой будем вместе творить нечто большее.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3 pb-5 mb-sm-0">
+					<div class="card h-100 mb-3" style="max-width: 21rem; background: #BAFF39">
+						<div class="card-body">
+							<h5 class="card-title">Развитие</h5>
+							<p class="card-text">Чтобы реализовать эту страницу нужно было изучить так много. А так много еще предстоит узнать и внедрить. Развитие внутренних качеств, а также профессиональных.</p>
+						</div>
+					</div>
+				</div>
 
-  	</div>
-  </nav>
-  <footer id="footer">
-  	<div class="container">
-  		<p>Администратор сайта:</p>
-  		<p>Пустовалова Ирина Павловна</p>
-  		<a href="mailto:pustov4lova.irina@yandex.ru" class="mailo">
-			pustov4lova.irina@yandex.ru
-		<a>
-		<div class="contacts">
-			<a href="https://vk.com/id269910408">
-				<img src="img/vk.svg" class="cont">
-			</a>
-			<a href="https://www.instagram.com/irishka_0723">
-				<img src="img/instagram.svg" class="cont">
-			</a>
-			<a href="https://t.me/Rina_Code">
-				<img src="img/telegram.svg" class="cont">
-			</a>
-			<a href="mailto:pustov4lova.irina@yandex.ru">
-				<img src="img/email.svg" class="cont">
-			</a>
+			</div>
+
+			<div>
+				<h1 class="text-white py-5 text-center " id="form">Связаться со мной</h1>
+				<div class="row">
+					<form class="py-5 col-sm-10 offset-sm-1 text-center" autocomplete="off" action='email.php' method='post'>
+					<?php
+					if(!empty($_GET['message'])) {
+						$message = $_GET['message'];
+						echo '<p class="message"> '.$message.'</p>';
+					}
+					?>
+					<div class="form-group">
+						<input class="some-input py-2 px-4 mt-4" type='text' name='username' required placeholder="Введите свое имя">
+					</div>
+					<div class="form-group">
+						<input class="some-input py-2 px-4 mt-4" type='email' name='email' required placeholder="Введите адрес электронной почты" >
+					</div>
+					<div class="form-group">
+						<textarea class="some-input py-2 px-4 mt-4" id="exampleFormControlTextarea1" name="feedback" rows="3" placeholder="Ваше сообщение"></textarea>
+					</div>
+					<input class="btn btn-send px-4 my-5 fs-5 fw-bold" type='submit' value='Отправить' style="
+							--bs-btn-color: #000;
+							--bs-btn-bg: #BAFF39;
+							--bs-btn-border-color: #BAFF39;
+							--bs-btn-hover-border-color: #BAFF39;">
+				</form>
+
+				</div>
+
+
+			</div>
+
+
 		</div>
-  	</div>
-  </footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-
-<script src="js/main.js"></script>
-  </div>
-  
-</body>
+	</body>
+	</html> 
